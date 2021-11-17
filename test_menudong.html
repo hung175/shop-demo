@@ -1,0 +1,26 @@
+<section class="header" style="width:100%;">
+    <div class="row">
+        <div class="col-md-12">
+            <table style="text-align:center;width:100%;">
+                <thead>
+                    <tr class="nav2">
+                        <?php
+                            $db = new SanPham();
+                            $result_name = $db->getNameMenuHeader();
+                            $result_link = $db->getLinkMenuHeader();
+                        ?>
+                        <th><a href="#" id="menustyle"><img src="./Content/img/<?php echo $name1; ?>" alt="" class="iconheader"></a></th>
+                        <th><a href="#" id="menustyle"><i class="bi bi-search"></i><?php echo $result_name[1]; ?></a></th>
+                        <th><a href="#" id="menustyle"><?php echo $result_name[2]; ?></a></th>
+                        <th><a href="#" id="menustyle"><?php echo $result_name[3]; ?></a></th>
+                        <th><a href="#" id="menustyle"><?php echo $result_name[4]; ?></a></th>
+                        <th><a href="#" id="menustyle"><i class="bi-cart"></i><?php echo $result_name[5]; ?></a></th>
+                        <th><a href="#" id="menustyle"><i class="bi bi-person-circle"></i><?php echo $result_name[6]; ?></a></th>
+                        
+                    </tr>
+                </thead>
+                
+            </table>
+        </div>
+    </div>  
+</section>
